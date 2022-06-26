@@ -1,0 +1,47 @@
+.features {
+  text-align: center;
+  h5 {
+    color: #dc780b;
+  }
+}
+.passion-child {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 33%;
+    text-align: center;
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 93px;
+      width: 60%;
+      p {
+        color: #150c01a9;
+      }
+    }
+  }
+  .passion-img {
+    width: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    img {
+      width: 40px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+}

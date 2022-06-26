@@ -1,0 +1,193 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  width: 100vw;
+  z-index: 999999;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav .topNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .topNav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .topNav div a {
+  font-size: 17px;
+  color: #150c01;
+}
+
+nav .topNav div .active {
+  color: #dc780b;
+}
+
+nav .order {
+  width: 150px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #dc780b;
+  border-radius: 5px;
+  color: white;
+}
+
+.making-food {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.making-food p {
+  color: #150c01;
+}
+
+.making-food .fast-food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 300px;
+  width: 380px;
+}
+
+.making-food .fast-food h1 {
+  font-size: 35px;
+}
+
+.making-food .fast-food p {
+  font-size: 17px;
+}
+
+.making-food .fast-food > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.making-food .fast-food > div button {
+  width: 142px;
+  height: 42px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.making-food .fast-food > div button:first-child {
+  background-color: #dc780b;
+  color: white;
+}
+
+.making-food .fast-food > div button:last-child {
+  margin-left: 20px;
+  background-color: white;
+  color: #dc780b;
+  border: 1px solid #dc770b52;
+}
+
+.making-food .image-class {
+  position: relative;
+  left: 64px;
+}
+
+.making-food .image-class img {
+  width: 800px;
+}
+
+@media screen and (max-width: 1290px) {
+  .making-food .image-class {
+    position: static;
+  }
+  .making-food .image-class img {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 1122px) {
+  .making-food .fast-food > div {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .making-food .fast-food > div button:last-child {
+    margin: 0;
+  }
+  .making-food .image-class img {
+    width: 550px;
+  }
+}
+
+@media screen and (max-width: 917px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  nav {
+    width: 100%;
+  }
+  .making-food {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+/*# sourceMappingURL=Nav.css.map */

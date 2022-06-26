@@ -1,0 +1,140 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  width: 100vw;
+  z-index: 999999;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 90%;
+  margin: 0 auto;
+  a {
+    text-decoration: none;
+  }
+  .topNav {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    div {
+      display: flex;
+      width: 80%;
+      justify-content: space-between;
+      a {
+        font-size: 17px;
+        color: #150c01;
+      }
+      .active {
+        color: #dc780b;
+      }
+    }
+  }
+  .order {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dc780b;
+    border-radius: 5px;
+    color: white;
+  }
+}
+.making-food {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    color: #150c01;
+  }
+  .fast-food {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    width: 380px;
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      font-size: 17px;
+    }
+    > div {
+      display: flex;
+      align-items: center;
+      button {
+        width: 142px;
+        height: 42px;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        &:first-child {
+          background-color: #dc780b;
+          color: white;
+        }
+        &:last-child {
+          margin-left: 20px;
+          background-color: white;
+          color: #dc780b;
+          border: 1px solid #dc770b52;
+        }
+      }
+    }
+  }
+  .image-class {
+    img {
+      width: 800px;
+    }
+    position: relative;
+    left: 64px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .making-food {
+    .image-class {
+      position: static;
+      img {
+        width: 650px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1122px) {
+  .making-food {
+    .fast-food {
+      > div {
+        justify-content: space-around;
+        button {
+          &:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+    .image-class {
+      img {
+        width: 550px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 917px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  nav {
+    width: 100%;
+  }
+  .making-food {
+    flex-direction: column-reverse;
+  }
+}
